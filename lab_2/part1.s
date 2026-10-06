@@ -99,7 +99,7 @@ _start:
 		and t1, s6, s5 # see if it's negative
 		beq t1, s6, NEG_NUM
 		
-	POS_NUM:s
+	POS_NUM:
 		slli t0, s2, 2 # increment s2 address by t0
 		add t0, t0, s8 #t0 stores the actual address now
 		sw s5, 0(t0) # store s5 into the correct address
